@@ -7,6 +7,8 @@
                  [clj-webdriver "0.6.0"]
                  [org.twitter4j/twitter4j-core "3.0.3"]
                  [midje "1.4.0"]
-                 ]
+                 [clj-yaml "0.4.0"]
+                 [clj-time "0.4.4"]
+                 [environ "0.4.0"]]
   :plugins       [[lein-midje "2.0.1"]]
   )

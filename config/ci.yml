@@ -1,0 +1,4 @@
+frontend: http://localhost:40020
+twitter-user-properties: /etc/nuotltestuser.twitter.properties
+twitter-listener: nextuptester
+browser: htmlunit

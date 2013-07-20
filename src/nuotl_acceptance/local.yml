@@ -1,6 +1,0 @@
-frontend:
-  host: localhost
-  port: 40000
-
-twitter:
-  properties:

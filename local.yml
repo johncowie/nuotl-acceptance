@@ -1,0 +1,7 @@
+frontend: http://localhost:40020
+
+twitter-user-properties: /Users/John/Dropbox/nuotltestuser.properties
+
+twitter-listener: nextuptester
+
+browser: firefox
