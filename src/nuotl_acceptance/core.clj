@@ -4,7 +4,8 @@
             [clj-yaml.core :as yaml]
             [clj-time.core :as t]
             [clj-time.local :as lt]
-            [environ.core :refer [env]])
+            [environ.core :refer [env]]
+            [clojure.tools.logging :refer [debug]])
   (:import [twitter4j StatusUpdate Twitter TwitterFactory]
            [twitter4j.conf PropertyConfiguration]))
 
@@ -65,6 +66,10 @@
          (taxi/text (taxi/find-element {:css (format "#E%s .name" (. tweet (getId))) })) => "Next Up Test User"
          (taxi/text (taxi/find-element {:css (format "#E%s .area" (. tweet (getId))) })) => "North London"
          (. twitter (destroyStatus (. tweet (getId))))
+         (debug "Made destroyStatus call - now sleeping for 1000ms")
+         (Thread/sleep 1000)
+         (taxi/refresh)
+         (taxi/exists? (format "#E%s" (. tweet (getId)))) => false
          ))))
 
 (taxi/quit)

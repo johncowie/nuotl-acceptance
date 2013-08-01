@@ -9,6 +9,10 @@
                  [midje "1.4.0"]
                  [clj-yaml "0.4.0"]
                  [clj-time "0.4.4"]
-                 [environ "0.4.0"]]
+                 [environ "0.4.0"]
+                 [org.clojure/tools.logging "0.2.6"]
+                 [log4j/log4j "1.2.17"]
+                 ]
+  :resource-paths ["resources"]
   :plugins       [[lein-midje "2.0.1"]]
   )
